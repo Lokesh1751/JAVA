@@ -1,0 +1,17 @@
+public class reversestr {
+    public static void reverseprint(String str,int n){
+        if(n==0){
+            System.out.print(str.charAt(n));
+            return;
+        }
+        System.out.print(str.charAt(n));
+        reverseprint(str, n-1);
+       
+
+
+    }
+    public static void main(String[]args){
+        String str="abcd";
+        reverseprint(str,str.length()-1);
+    }
+}
