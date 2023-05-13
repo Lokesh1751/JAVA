@@ -1,0 +1,22 @@
+public class sumfibbo {
+    public static void fibbo(int a,int b,int n,int sum){
+        
+        if(n==0){
+System.out.println(sum+1);
+            return;
+        }
+int c=a+b;
+//System.out.println(c);
+sum=sum+c;
+//System.out.print(c+" ");
+fibbo(b, c, n-1,sum);
+    }
+    public static void main(String[] args){
+        int n=7;
+        int a=0;
+        int b=1;
+        // System.out.print(a+" ");
+        // System.out.print(b+" ");
+        fibbo(a,b,n-2,0);
+    }
+}
