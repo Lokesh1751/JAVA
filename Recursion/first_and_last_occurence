@@ -1,0 +1,27 @@
+public class findfirstandlast {
+public static int f=-1;
+public static int l=-1;
+    public static void firstnlast(String str,char ch,int i,int n){
+        if(i==n){
+            System.out.println("First: "+ f);
+            System.out.println("Last: "+ l);
+            return;
+        }
+        if(str.charAt(i)==ch){
+            if(f==-1){
+                f=i;
+            }
+            else{
+                l=i;
+            }
+        }
+        firstnlast(str, ch, i+1, n);
+    }
+    public static void main(String[] args){
+        String str="abaacdaefaah";
+        char ch='a';
+        int i=0;
+        int n=str.length()-1;
+        firstnlast(str,ch,i,n);
+    }
+}
