@@ -1,0 +1,23 @@
+public class moveallx {
+    public static void movekro(String str,int i,int cnt,String newstr){
+        if(i==str.length()){
+            for(int j=0;j<cnt;j++){
+                newstr+='x';
+            }
+            System.out.println(newstr);
+            return;
+        }
+        if(str.charAt(i)=='x'){
+            cnt++;
+            movekro(str, i+1, cnt, newstr);
+        }
+        else{
+            newstr+=str.charAt(i);
+            movekro(str, i+1, cnt, newstr);
+        }
+    }
+    public static void main(String[] args){
+        String str="axbcxxd";
+        movekro(str,0,0," ");
+    }
+}
