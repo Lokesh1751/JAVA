@@ -1,9 +1,18 @@
+import java.util.HashSet;
+
 public class subsequence {
     public static void main(String[] args){
-       StringBuilder ans=new StringBuilder("abc");
+       StringBuilder ans=new StringBuilder("aba");
+       HashSet<String> set=new HashSet<>();
         for(int i=0;i<=ans.length();i++){
             for(int j=i+1;j<=ans.length();j++){
-                System.out.println(ans.substring(i, j));
+                if(set.contains(ans.substring(i, j))){
+
+                }
+                else{
+                    System.out.println(ans.substring(i, j));
+                    set.add(ans.substring(i, j));
+                }
             }
         }
     }
