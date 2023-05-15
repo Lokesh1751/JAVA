@@ -1,0 +1,18 @@
+import java.util.*;
+
+public class sumofstringcharacter {
+    public static void main(String[] args) {
+        // Write a Java program to reverse a given string using StringBuilder
+
+        StringBuilder sc = new StringBuilder("1234");
+        int sum=0;
+        for(int i=0;i<sc.length();i++){
+            int ans=sc.charAt(i)-'0';
+            sum+=ans;
+        }
+        System.out.println(sum);
+
+       
+        
+    }
+}
