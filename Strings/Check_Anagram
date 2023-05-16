@@ -1,0 +1,33 @@
+import java.util.*;
+
+import javax.naming.ldap.Rdn;
+
+public class ques9 {
+    public static boolean exist(StringBuilder str, char ch) {
+        for (int i = 0; i < str.length(); i++) {
+            if (str.charAt(i) == ch) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public static void main(String[] args) {
+        StringBuilder sc = new StringBuilder("gram");
+        StringBuilder sc1 = new StringBuilder("arm");
+
+        boolean sol = true;
+        for (int i = 0; i < sc.length(); i++) {
+            char ch = sc.charAt(i);
+            if (exist(sc1, ch) == false) {
+                sol = false;
+                System.out.println("Not Anangram");
+                break;
+
+            }
+        }
+        if(sol==true){
+            System.out.println("Anangram");
+        }
+    }
+}
