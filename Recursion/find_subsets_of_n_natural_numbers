@@ -1,0 +1,26 @@
+import  java.util.*;
+public class findsubsets {
+    // find subsets of n natural numbers
+    public static void printsub(ArrayList<Integer> a){
+        for(int i=0;i<a.size();i++){
+            System.out.print(a.get(i)+" ");
+        }
+        System.out.println();
+    }
+    public static void findsub(int n, ArrayList<Integer> a){
+        if(n==0){
+            printsub(a);
+            return;
+        }
+a.add(n);
+findsub(n-1, a);
+
+a.remove(a.size()-1);
+findsub(n-1, a);
+    }
+    public static void main(String[] args){
+        int n=4;
+        ArrayList<Integer> a=new ArrayList<>();
+        findsub(n,a);
+    }
+}
