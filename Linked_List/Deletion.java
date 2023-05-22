@@ -1,5 +1,11 @@
+import javax.print.attribute.Size2DSyntax;
+
 public class basic {
     Node head = null;
+    private int size;
+    basic(){
+        this.size=0;
+    }
 
     class Node {
         String data;
@@ -8,6 +14,7 @@ public class basic {
         Node(String d) {
             this.data = d;
             this.next = null;
+            size++;
         }
     }
 
@@ -55,6 +62,7 @@ public class basic {
             System.out.println("The List is empty");
             return;
         }
+        size--;
         head=head.next;
     }
     public void deletionlast(){
@@ -62,12 +70,19 @@ public class basic {
             System.out.println("The List is empty");
             return;
         }
-        else{
-        Node currnode=head;
-        while(currnode.next.next!=null){
-            currnode=currnode.next;
+       
+        else if(head.next!=null){
+        Node secondlast=head;
+        while(secondlast.next.next!=null){
+            secondlast=secondlast.next;
         }
-        currnode.next=null;
+        secondlast.next=null;
+        size--;
+        }
+        else{
+            head=null;
+            size--;
+            return;
         }
 
     }
@@ -77,10 +92,13 @@ public class basic {
         ll.addfirst("is");
         ll.addfirst("Name");
         ll.addfirst("My");
+        ll.print();
+       System.out.println(ll.size);
         ll.addlast("Angi");
 ll.deletionfirst();
 ll.deletionlast();
         ll.print();
+        System.out.println(ll.size);
 
     }
 }
