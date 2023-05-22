@@ -51,14 +51,24 @@ public class basic {
     }
 
     public void deletionfirst(){
+        if(head==null){
+            System.out.println("The List is empty");
+            return;
+        }
         head=head.next;
     }
     public void deletionlast(){
+         if(head==null){
+            System.out.println("The List is empty");
+            return;
+        }
+        else{
         Node currnode=head;
         while(currnode.next.next!=null){
             currnode=currnode.next;
         }
         currnode.next=null;
+        }
 
     }
     public static void main(String[] args) {
