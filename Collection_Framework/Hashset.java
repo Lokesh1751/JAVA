@@ -1,6 +1,7 @@
 import java.util.*;
 public class Hashset {
    public static void main(String[] args) {
+     //OPERATIONS PERFORM IN O(1) TIME COMPLEXITY
     // DUPLICATE ELEMENTS ARE NOT ALLOWED
     // ORDER IS NOT MAINTAIN => ELEMENTS GET STORED IN RANDOM ORDER
 
