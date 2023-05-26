@@ -1,7 +1,7 @@
 import java.util.*;
 
 public class map {
-    // IN RANDOM ORDER STORE
+    // IN RANDOM ORDER STORE PAIRS
     public static void main(String[] args) {
         HashMap<String, Integer> hm = new HashMap<String, Integer>();
 
