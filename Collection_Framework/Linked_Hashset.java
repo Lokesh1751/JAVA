@@ -34,5 +34,10 @@ public class linkedhashset {
 
         // size of set
         System.out.println(s.size());
+        
+        //Iteration of linkedhashset
+        for(Integer l:s){
+    System.out.println(l);
+}
     }
 }
