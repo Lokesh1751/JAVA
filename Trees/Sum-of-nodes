@@ -1,0 +1,27 @@
+//Approach 1
+public static int sumofnodes(Node root){
+        Queue<Node> q = new LinkedList<>();
+        q.add(root);
+        int cnt=0;
+        while (!q.isEmpty()) {
+            Node cr = q.remove();
+            cnt+=cr.data; 
+                if (cr.left != null) {
+                    q.add(cr.left);
+                }
+                if (cr.right != null) {
+                    q.add(cr.right);
+                }
+        }
+        return cnt;
+    }
+
+//Approach 2
+    public static int smofnode(Node root){
+        if(root==null){
+            return 0;
+        }
+        int leftnodes=smofnode(root.left);
+        int rightnodes=smofnode(root.right);
+        return leftnodes+rightnodes+root.data;
+    }
