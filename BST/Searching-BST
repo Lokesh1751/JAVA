@@ -1,0 +1,16 @@
+public static boolean Searching(Node root,int val) {
+        if (root == null) {
+            return false;
+        }
+        if(root.data==val){
+            return true;
+        }
+        if(root.data>val){
+            return Searching(root.left,val);
+        }
+       else{
+           return Searching(root.right,val);
+        }
+        //return true;
+    }
+// Time Complexity-O(H) ->Where H is Height
