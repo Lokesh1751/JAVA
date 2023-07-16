@@ -11,7 +11,7 @@ public class implmentation {
             eow = false;
         }
     }
-
+// Time complexoty=O(L) where L is size of searched key
     static Node root = new Node();
 
     public static void insert(String word) {
