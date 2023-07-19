@@ -1,6 +1,7 @@
 import java.util.*;
 
 public class BFS {
+    //Time Complexity = O(V+E)
     public static void BFS(ArrayList<Integer> graph[]) {
         Queue<Integer> q = new LinkedList<>();
         boolean visted[] = new boolean[graph.length];
