@@ -1,6 +1,8 @@
 import java.util.*;
 
 public class DFS {
+        //Time Complexity = O(V+E)
+    
     public static void DFS(ArrayList<Integer> graph[], int curr, boolean visited[]) {
         if (visited[curr] == false) {
             System.out.print(curr + " ");
