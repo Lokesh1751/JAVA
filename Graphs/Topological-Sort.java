@@ -1,7 +1,7 @@
 import java.util.*;
 
 public class TopologicalSort {
-
+//Time Complexity => O(V+E);
     public static void TopoSort(ArrayList<Integer> graph[], int curr, boolean vis[], Stack<Integer> st) {
         // Step1 => mark true for curr node
         vis[curr] = true;
