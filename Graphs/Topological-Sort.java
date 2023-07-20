@@ -15,6 +15,7 @@ public class TopologicalSort {
         }
         // Step3 => Push current element in stack
         st.push(curr);
+
     }
 
     public static void main(String[] args) {
@@ -45,6 +46,12 @@ public class TopologicalSort {
                 TopoSort(graph, i, vis, st);
             }
         }
-        System.out.println("Topological Sort Result: " + st);
+
+        // Step4 => Pop element on by one for get topo sort
+        System.out.print("Topological Sort Result is: ");
+        while (!st.empty()) {
+            System.out.print(st.peek() + " ");
+            st.pop();
+        }
     }
 }
