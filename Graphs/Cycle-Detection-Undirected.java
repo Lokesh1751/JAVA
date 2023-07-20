@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 
 public class Cycledetundir {
+    // Time Complexity => O(V+E)
     public static boolean Cydetundirected(ArrayList<Integer> graph[], int curr, boolean vis[], int par) {
         vis[curr] = true;
         for (int i = 0; i < graph[curr].size(); i++) {
