@@ -5,6 +5,8 @@ public class Dijkastra {
     //Time Complexity => O(E + ELOG(V) )
 
     //This algo is help to find the shortest distance from source to all destinations
+
+    // Not able to return exact result with negative weights present
     static class Edge {
         int src;
         int dest;
