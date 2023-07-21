@@ -13,7 +13,7 @@ public class Bellmenford {
         }
     }
  
-
+// Bellmen Ford algo is not able to get a accurate result for negative weight cycle graphs
     public static void bellmen(ArrayList<Edge> graph[], int src, int V) {
         int dist[] = new int[V];
         for (int i = 0; i < V; i++) {
