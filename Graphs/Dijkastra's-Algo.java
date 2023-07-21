@@ -3,6 +3,8 @@ import java.util.*;
 public class Dijkastra {
 
     //Time Complexity => O(E + ELOG(V) )
+
+    //This algo is help to find the shortest distance from source to all destinations
     static class Edge {
         int src;
         int dest;
