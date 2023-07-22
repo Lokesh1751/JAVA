@@ -1,6 +1,7 @@
 import java.util.*;
 
 public class KosarajusAlgo {
+     // Time Complexity => O(V+E)
     public static void toposort(ArrayList<Integer> graph[], int curr, boolean vis[], Stack<Integer> s) {
         vis[curr] = true;
         for (int i = 0; i < graph[curr].size(); i++) {
