@@ -18,6 +18,7 @@ public class PrimsAlgo {
     // graph
     // spanning tree is that tree in which when we remove some edges from the graph
     // still it is connected and edge weight of graph is minimum
+    //Time Complexity => O(ElogV)
 
     public static class Pair implements Comparable<Pair> {
         int node;
